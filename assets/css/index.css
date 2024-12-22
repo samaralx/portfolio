@@ -1,0 +1,54 @@
+.header-style-2 #header {
+    background: transparent;
+    position: fixed;
+}
+
+.header-style-2 #header {
+    width: 100%;
+}
+
+#content {
+    padding-bottom: 0px;
+    height: 100vh;
+}
+
+.main-slider,
+.main-slider__slides {
+    padding: 0;
+    height: 100%;
+}
+
+.main-slider__slides li {
+    padding: 0;
+    height: 100vh;
+}
+
+@media (min-width: 768px) {
+    .main-slider .main-slider__slides li {
+        padding: 0;
+    }
+}
+
+.main-slider-slide__content {
+    margin-top: 45%;
+}
+
+.footer-homepage {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-homepage .row {
+    margin: auto;
+}
+
+.widget-title a {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .widget {
+        margin-bottom: 16px;
+    }
+}
