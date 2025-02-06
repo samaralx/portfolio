@@ -13,3 +13,11 @@
   font-display: swap;
   src: url(Poppins-SemiBold.ttf) format("truetype");
 }
+
+@font-face {
+  font-family: "DMSans";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(DMSans_24pt-Light.ttf) format("truetype");
+}
