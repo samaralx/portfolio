@@ -326,7 +326,8 @@ html {
 body {
   background-color: #fff;
   color: #333;
-  font: 14px "Roboto", Arial, sans-serif;
+  font-family: "DMSans", sans-serif;
+  /* font: 14px "Roboto", Arial, sans-serif; */
   line-height: 25px;
   font-weight: 300;
 }
@@ -7257,4 +7258,8 @@ a.post-thumbnail {
   .logo svg {
     width: 120px;
   }
+}
+
+.story-text {
+  font-family: "DMSans", sans-serif;
 }
