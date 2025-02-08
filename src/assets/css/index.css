@@ -1,14 +1,9 @@
-.header-style-2 #header {
-  background: transparent;
+.header-style-2 #header-wrap {
   position: fixed;
 }
 
 .header-style-2 #header {
-  width: 100%;
-}
-
-#mobile-menu {
-  margin: var(--mobile-header-height) 0 0;
+  background: transparent;
 }
 
 #content {
