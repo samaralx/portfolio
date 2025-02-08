@@ -53,3 +53,4 @@ $RECYCLE.BIN/
 
 *.bak
 htaccess
+.parcel-cache
