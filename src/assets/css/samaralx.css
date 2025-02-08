@@ -89,7 +89,7 @@ video {
   font-size: 100%;
   /* font: inherit; */
   vertical-align: baseline;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -128,7 +128,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: "";
+  content: '';
   content: none;
 }
 
@@ -260,8 +260,8 @@ input {
 	 * 2. Remove excess padding in IE 8/9/10.
 	 */
 
-input[type="checkbox"],
-input[type="radio"] {
+input[type='checkbox'],
+input[type='radio'] {
   box-sizing: border-box; /* 1 */
   padding: 0; /* 2 */
 }
@@ -272,8 +272,8 @@ input[type="radio"] {
 	 * decrement button to change from `default` to `text`.
 	 */
 
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -283,7 +283,7 @@ input[type="number"]::-webkit-outer-spin-button {
 	 *    (include `-moz` to future-proof).
 	 */
 
-input[type="search"] {
+input[type='search'] {
   -webkit-appearance: textfield; /* 1 */
   -webkit-box-sizing: content-box; /* 2 */
   -moz-box-sizing: content-box;
@@ -296,8 +296,8 @@ input[type="search"] {
 	 * padding (and `textfield` appearance).
 	 */
 
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -326,7 +326,7 @@ html {
 body {
   background-color: #fff;
   color: #333;
-  font-family: "DMSans", sans-serif;
+  font-family: 'DMSans', sans-serif;
   /* font: 14px "Roboto", Arial, sans-serif; */
   line-height: 25px;
   font-weight: 300;
@@ -350,7 +350,7 @@ h4,
 h5,
 h6 {
   color: #000;
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: 'Raleway', Arial, sans-serif;
   font-weight: 500;
   letter-spacing: 3px;
 }
@@ -458,7 +458,7 @@ var,
 samp,
 code,
 pre {
-  font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+  font-family: Monaco, Menlo, Consolas, 'Courier New', monospace;
 }
 
 code {
@@ -654,7 +654,7 @@ ul.project-details {
 
 ul.project-details li span {
   color: #000;
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: 'Raleway', Arial, sans-serif;
   font-size: 12px;
   font-weight: 400;
   letter-spacing: 3px;
@@ -678,13 +678,13 @@ ul.fill-circle li:before {
   height: auto;
   margin-right: 8px;
   color: #000;
-  font-family: "FontAwesome";
+  font-family: 'FontAwesome';
   font-size: 8px;
   font-style: normal;
 }
 
 ul.fill-circle li:before {
-  content: "\f111";
+  content: '\f111';
 }
 
 /**
@@ -707,7 +707,7 @@ ul.check li:before {
   border: 1px solid #000;
   margin-right: 15px;
   color: #000;
-  font-family: "iconfontcustom";
+  font-family: 'iconfontcustom';
   font-size: 10px;
   line-height: 14px;
   font-weight: 400;
@@ -715,7 +715,7 @@ ul.check li:before {
 }
 
 ul.check li:before {
-  content: "\ea9f";
+  content: '\ea9f';
 }
 
 /* ==========================================================================
@@ -838,20 +838,20 @@ label {
   margin-bottom: 5px;
 }
 
-input[type="text"],
-input[type="password"],
-input[type="date"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="month"],
-input[type="week"],
-input[type="email"],
-input[type="number"],
-input[type="search"],
-input[type="tel"],
-input[type="time"],
-input[type="url"],
-input[type="color"],
+input[type='text'],
+input[type='password'],
+input[type='date'],
+input[type='datetime'],
+input[type='datetime-local'],
+input[type='month'],
+input[type='week'],
+input[type='email'],
+input[type='number'],
+input[type='search'],
+input[type='tel'],
+input[type='time'],
+input[type='url'],
+input[type='color'],
 textarea {
   display: block;
   max-width: 100%;
@@ -865,86 +865,86 @@ textarea {
   background-color: #fff;
 }
 
-input[type="text"]:focus,
-input[type="password"]:focus,
-input[type="date"]:focus,
-input[type="datetime"]:focus,
-input[type="datetime-local"]:focus,
-input[type="month"]:focus,
-input[type="week"]:focus,
-input[type="email"]:focus,
-input[type="number"]:focus,
-input[type="search"]:focus,
-input[type="tel"]:focus,
-input[type="time"]:focus,
-input[type="url"]:focus,
-input[type="color"]:focus,
+input[type='text']:focus,
+input[type='password']:focus,
+input[type='date']:focus,
+input[type='datetime']:focus,
+input[type='datetime-local']:focus,
+input[type='month']:focus,
+input[type='week']:focus,
+input[type='email']:focus,
+input[type='number']:focus,
+input[type='search']:focus,
+input[type='tel']:focus,
+input[type='time']:focus,
+input[type='url']:focus,
+input[type='color']:focus,
 textarea:focus {
   border-color: #bbb;
   outline: none;
 }
 
-input[type="text"]:disabled,
-input[type="password"]:disabled,
-input[type="date"]:disabled,
-input[type="datetime"]:disabled,
-input[type="datetime-local"]:disabled,
-input[type="month"]:disabled,
-input[type="week"]:disabled,
-input[type="email"]:disabled,
-input[type="number"]:disabled,
-input[type="search"]:disabled,
-input[type="tel"]:disabled,
-input[type="time"]:disabled,
-input[type="url"]:disabled,
-input[type="color"]:disabled,
+input[type='text']:disabled,
+input[type='password']:disabled,
+input[type='date']:disabled,
+input[type='datetime']:disabled,
+input[type='datetime-local']:disabled,
+input[type='month']:disabled,
+input[type='week']:disabled,
+input[type='email']:disabled,
+input[type='number']:disabled,
+input[type='search']:disabled,
+input[type='tel']:disabled,
+input[type='time']:disabled,
+input[type='url']:disabled,
+input[type='color']:disabled,
 textarea:disabled {
   background-color: #f3f3f3;
   cursor: not-allowed;
 }
 
-input[type="text"][disabled],
-input[type="text"][readonly],
-fieldset[disabled] input[type="text"],
-input[type="password"][disabled],
-input[type="password"][readonly],
-fieldset[disabled] input[type="password"],
-input[type="date"][disabled],
-input[type="date"][readonly],
-fieldset[disabled] input[type="date"],
-input[type="datetime"][disabled],
-input[type="datetime"][readonly],
-fieldset[disabled] input[type="datetime"],
-input[type="datetime-local"][disabled],
-input[type="datetime-local"][readonly],
-fieldset[disabled] input[type="datetime-local"],
-input[type="month"][disabled],
-input[type="month"][readonly],
-fieldset[disabled] input[type="month"],
-input[type="week"][disabled],
-input[type="week"][readonly],
-fieldset[disabled] input[type="week"],
-input[type="email"][disabled],
-input[type="email"][readonly],
-fieldset[disabled] input[type="email"],
-input[type="number"][disabled],
-input[type="number"][readonly],
-fieldset[disabled] input[type="number"],
-input[type="search"][disabled],
-input[type="search"][readonly],
-fieldset[disabled] input[type="search"],
-input[type="tel"][disabled],
-input[type="tel"][readonly],
-fieldset[disabled] input[type="tel"],
-input[type="time"][disabled],
-input[type="time"][readonly],
-fieldset[disabled] input[type="time"],
-input[type="url"][disabled],
-input[type="url"][readonly],
-fieldset[disabled] input[type="url"],
-input[type="color"][disabled],
-input[type="color"][readonly],
-fieldset[disabled] input[type="color"],
+input[type='text'][disabled],
+input[type='text'][readonly],
+fieldset[disabled] input[type='text'],
+input[type='password'][disabled],
+input[type='password'][readonly],
+fieldset[disabled] input[type='password'],
+input[type='date'][disabled],
+input[type='date'][readonly],
+fieldset[disabled] input[type='date'],
+input[type='datetime'][disabled],
+input[type='datetime'][readonly],
+fieldset[disabled] input[type='datetime'],
+input[type='datetime-local'][disabled],
+input[type='datetime-local'][readonly],
+fieldset[disabled] input[type='datetime-local'],
+input[type='month'][disabled],
+input[type='month'][readonly],
+fieldset[disabled] input[type='month'],
+input[type='week'][disabled],
+input[type='week'][readonly],
+fieldset[disabled] input[type='week'],
+input[type='email'][disabled],
+input[type='email'][readonly],
+fieldset[disabled] input[type='email'],
+input[type='number'][disabled],
+input[type='number'][readonly],
+fieldset[disabled] input[type='number'],
+input[type='search'][disabled],
+input[type='search'][readonly],
+fieldset[disabled] input[type='search'],
+input[type='tel'][disabled],
+input[type='tel'][readonly],
+fieldset[disabled] input[type='tel'],
+input[type='time'][disabled],
+input[type='time'][readonly],
+fieldset[disabled] input[type='time'],
+input[type='url'][disabled],
+input[type='url'][readonly],
+fieldset[disabled] input[type='url'],
+input[type='color'][disabled],
+input[type='color'][readonly],
+fieldset[disabled] input[type='color'],
 textarea[disabled],
 textarea[readonly],
 fieldset[disabled] textarea {
@@ -977,15 +977,15 @@ select[multiple] {
   height: auto;
 }
 
-input[type="file"],
-input[type="checkbox"],
-input[type="radio"],
+input[type='file'],
+input[type='checkbox'],
+input[type='radio'],
 select {
   margin: 0 0 10px;
 }
 
-input[type="checkbox"] + label,
-input[type="radio"] + label {
+input[type='checkbox'] + label,
+input[type='radio'] + label {
   display: inline-block;
   margin-right: 10px;
   margin-bottom: 0;
@@ -993,14 +993,14 @@ input[type="radio"] + label {
   vertical-align: baseline;
 }
 
-input[type="file"] {
+input[type='file'] {
   width: 100%;
 }
 
 button,
-input[type="reset"],
-input[type="submit"],
-input[type="button"] {
+input[type='reset'],
+input[type='submit'],
+input[type='button'] {
   position: relative;
   display: inline-block;
   padding: 6px 10px;
@@ -1024,25 +1024,25 @@ input[type="button"] {
  	 * 2. Change padding inherited from .span* with the one set in base.css for inputs
  	 */
 
-button[class*="span"],
-input[type="reset"][class*="span"],
-input[type="submit"][class*="span"],
-input[type="button"][class*="span"],
-input[type="text"][class*="span"],
-input[type="password"][class*="span"],
-input[type="date"][class*="span"],
-input[type="datetime"][class*="span"],
-input[type="datetime-local"][class*="span"],
-input[type="month"][class*="span"],
-input[type="week"][class*="span"],
-input[type="email"][class*="span"],
-input[type="number"][class*="span"],
-input[type="search"][class*="span"],
-input[type="tel"][class*="span"],
-input[type="time"][class*="span"],
-input[type="url"][class*="span"],
-textarea[class*="span"],
-select[class*="span"] {
+button[class*='span'],
+input[type='reset'][class*='span'],
+input[type='submit'][class*='span'],
+input[type='button'][class*='span'],
+input[type='text'][class*='span'],
+input[type='password'][class*='span'],
+input[type='date'][class*='span'],
+input[type='datetime'][class*='span'],
+input[type='datetime-local'][class*='span'],
+input[type='month'][class*='span'],
+input[type='week'][class*='span'],
+input[type='email'][class*='span'],
+input[type='number'][class*='span'],
+input[type='search'][class*='span'],
+input[type='tel'][class*='span'],
+input[type='time'][class*='span'],
+input[type='url'][class*='span'],
+textarea[class*='span'],
+select[class*='span'] {
   float: none; /* 1 */
   padding: 10px 15px; /* 2 */
 }
@@ -1081,7 +1081,7 @@ select[class*="span"] {
   visibility: hidden;
   display: block;
   font-size: 0;
-  content: " ";
+  content: ' ';
   clear: both;
   height: 0;
 }
@@ -1416,7 +1416,7 @@ select[class*="span"] {
   visibility: hidden;
   display: block;
   font-size: 0;
-  content: " ";
+  content: ' ';
   clear: both;
   height: 0;
 }
@@ -1786,7 +1786,7 @@ select[class*="span"] {
   border: 4px solid transparent;
   border-top-color: #000;
   margin-top: -3px;
-  content: "";
+  content: '';
 }
 
 .header-style-2 .sf-arrows .sf-with-ul:after {
@@ -2638,7 +2638,7 @@ select[class*="span"] {
 
 .main-slider-slide__content h1 {
   color: #fff;
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: 'Raleway', Arial, sans-serif;
   font-size: 48px;
   line-height: 60px;
   font-weight: 200;
@@ -2651,7 +2651,7 @@ select[class*="span"] {
 
 .main-slider-slide__content p {
   color: #fff;
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: 'Raleway', Arial, sans-serif;
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 2px;
@@ -2714,7 +2714,7 @@ select[class*="span"] {
   visibility: hidden;
   height: 0;
   font-size: 0;
-  content: " ";
+  content: ' ';
   clear: both;
 }
 
@@ -2826,7 +2826,7 @@ select[class*="span"] {
   padding: 10px 15px;
   border: 1px solid #e6e6e6;
   margin-bottom: 20px;
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: 'Raleway', Arial, sans-serif;
   font-size: 12px;
   font-weight: 500;
   letter-spacing: 3px;
@@ -2841,11 +2841,11 @@ select[class*="span"] {
   right: 15px;
   font-size: 26px;
   font-weight: 400;
-  content: "+";
+  content: '+';
 }
 
 .accordion-item.active:after {
-  content: "-";
+  content: '-';
 }
 
 .accordion-item:hover,
@@ -2876,7 +2876,7 @@ select[class*="span"] {
   display: block;
   height: 0;
   font-size: 0;
-  content: " ";
+  content: ' ';
   clear: both;
 }
 
@@ -2893,7 +2893,7 @@ select[class*="span"] {
   padding: 10px 15px;
   border: 1px solid #e6e6e6;
   margin-bottom: 20px;
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: 'Raleway', Arial, sans-serif;
   font-size: 12px;
   font-weight: 500;
   letter-spacing: 3px;
@@ -2908,11 +2908,11 @@ select[class*="span"] {
   right: 15px;
   font-size: 26px;
   font-weight: 400;
-  content: "+";
+  content: '+';
 }
 
 .toggle-item.active:after {
-  content: "-";
+  content: '-';
 }
 
 .toggle-item:hover,
@@ -2943,7 +2943,7 @@ select[class*="span"] {
   display: block;
   height: 0;
   font-size: 0;
-  content: " ";
+  content: ' ';
   clear: both;
 }
 
@@ -2958,7 +2958,7 @@ select[class*="span"] {
   margin-bottom: 25px;
   background-color: #eee;
   color: #000;
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: 'Raleway', Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
 }
@@ -2967,8 +2967,8 @@ select[class*="span"] {
   position: absolute;
   top: 12px;
   right: 15px;
-  font-family: "iconfontcustom";
-  content: "\\";
+  font-family: 'iconfontcustom';
+  content: '\\';
 }
 
 .alert i {
@@ -3034,15 +3034,15 @@ select[class*="span"] {
 
 .breadcrumbs ul li {
   display: inline-block;
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: 'Raleway', Arial, sans-serif;
   letter-spacing: 3px;
 }
 
 .breadcrumbs ul li:after {
-  content: "/";
+  content: '/';
 }
 .breadcrumbs ul li:last-child:after {
-  content: "";
+  content: '';
 }
 
 /* .page-header-style-1 .breadcrumbs ul:before {
@@ -3172,7 +3172,7 @@ a.btn {
   display: block;
   height: 0;
   font-size: 0;
-  content: " ";
+  content: ' ';
   clear: both;
 }
 
@@ -3231,7 +3231,7 @@ select.validation-error {
   display: block;
   height: 0;
   font-size: 0;
-  content: " ";
+  content: ' ';
   clear: both;
 }
 
@@ -3241,7 +3241,7 @@ select.validation-error {
 
 #countdown {
   margin: 100px 0;
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: 'Raleway', Arial, sans-serif;
 }
 
 .is-countdown {
@@ -3269,7 +3269,7 @@ select.validation-error {
   display: block;
   height: 0;
   font-size: 0;
-  content: " ";
+  content: ' ';
   clear: both;
 }
 
@@ -3359,7 +3359,7 @@ select.validation-error {
 
 .headline h2 {
   margin-bottom: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .headline h5 {
@@ -3546,7 +3546,7 @@ select.validation-error {
   display: block;
   height: 0;
   font-size: 0;
-  content: " ";
+  content: ' ';
   clear: both;
 }
 
@@ -3559,7 +3559,7 @@ select.validation-error {
 .milestone .milestone-content {
   z-index: 1;
   color: #000;
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: 'Raleway', Arial, sans-serif;
   font-size: 72px;
   line-height: 100px;
   font-weight: 200;
@@ -3617,9 +3617,9 @@ select.validation-error {
   top: 110px;
   right: 0;
   color: #000;
-  font-family: "FontAwesome";
+  font-family: 'FontAwesome';
   font-size: 20px;
-  content: "\f105";
+  content: '\f105';
 }
 
 .horizontal-process-builder li:last-child:after {
@@ -3672,7 +3672,7 @@ select.validation-error {
   display: block;
   height: 0;
   font-size: 0;
-  content: " ";
+  content: ' ';
   clear: both;
 }
 
@@ -3713,9 +3713,9 @@ select.validation-error {
   bottom: -35px;
   left: 35px;
   color: #000;
-  font-family: "FontAwesome";
+  font-family: 'FontAwesome';
   font-size: 20px;
-  content: "\f107";
+  content: '\f107';
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -3808,7 +3808,7 @@ select.validation-error {
 }
 
 .pie-chart .pie-chart-percent {
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: 'Raleway', Arial, sans-serif;
   font-size: 36px;
   font-weight: 400;
 }
@@ -3816,7 +3816,7 @@ select.validation-error {
 .pie-chart-description {
   display: block;
   color: #000;
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: 'Raleway', Arial, sans-serif;
   font-size: 18px;
   font-weight: 400;
   letter-spacing: 3px;
@@ -3860,7 +3860,7 @@ select.validation-error {
 
 .pricing-table-header h1 small:before {
   display: block;
-  content: "/";
+  content: '/';
 }
 
 /* .pricing-table-header h4:after {
@@ -3874,7 +3874,7 @@ select.validation-error {
 
 .pricing-table-offer ul {
   margin-bottom: 50px;
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: 'Raleway', Arial, sans-serif;
   font-size: 12px;
   font-weight: 500;
   letter-spacing: 3px;
@@ -3890,7 +3890,7 @@ select.validation-error {
   width: 20px;
   border-bottom: 1px solid #e6e6e6;
   margin: 10px auto;
-  content: "";
+  content: '';
 }
 
 .pricing-table-offer ul li:last-child:after {
@@ -3911,7 +3911,7 @@ select.validation-error {
   margin-top: 10px;
   margin-bottom: 30px;
   color: #000;
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: 'Raleway', Arial, sans-serif;
   line-height: 14px;
   font-weight: 500;
   letter-spacing: 3px;
@@ -4043,7 +4043,7 @@ select.validation-error {
 
 .caption.title {
   color: #fff;
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: 'Raleway', Arial, sans-serif;
   font-size: 36px;
   font-weight: 400;
   letter-spacing: 6px;
@@ -4052,7 +4052,7 @@ select.validation-error {
 
 .caption.title-2 {
   color: #fff;
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: 'Raleway', Arial, sans-serif;
   font-size: 48px;
   line-height: 60px;
   font-weight: 200;
@@ -4062,7 +4062,7 @@ select.validation-error {
 
 .caption.title-3 {
   color: #000;
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: 'Raleway', Arial, sans-serif;
   font-size: 36px;
   line-height: 48px;
   font-weight: 200;
@@ -4071,7 +4071,7 @@ select.validation-error {
 
 .caption.subtitle {
   color: #fff;
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: 'Raleway', Arial, sans-serif;
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 2px;
@@ -4079,7 +4079,7 @@ select.validation-error {
 
 .caption.subtitle-2 {
   color: #fff;
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: 'Raleway', Arial, sans-serif;
   font-size: 18px;
   font-weight: 400;
   letter-spacing: 3px;
@@ -4094,7 +4094,7 @@ select.validation-error {
   padding-left: 10px;
   background-color: #000;
   color: #fff;
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: 'Raleway', Arial, sans-serif;
   font-size: 72px;
   line-height: 96px;
   font-weight: 200;
@@ -4398,7 +4398,7 @@ a.yahoo-icon:hover {
   margin-bottom: -1px;
   background-color: #f4f4f4;
   color: #000;
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: 'Raleway', Arial, sans-serif;
   font-weight: 400;
   letter-spacing: 3px;
   text-decoration: none;
@@ -4441,7 +4441,7 @@ a.yahoo-icon:hover {
   display: block;
   height: 0;
   font-size: 0;
-  content: " ";
+  content: ' ';
   clear: both;
 }
 
@@ -4470,7 +4470,7 @@ a.yahoo-icon:hover {
   margin-right: -1px;
   background-color: #f4f4f4;
   color: #000;
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: 'Raleway', Arial, sans-serif;
   font-weight: 400;
   letter-spacing: 3px;
   text-decoration: none;
@@ -4502,7 +4502,7 @@ a.yahoo-icon:hover {
   display: block;
   height: 0;
   font-size: 0;
-  content: " ";
+  content: ' ';
   clear: both;
 }
 
@@ -4627,7 +4627,7 @@ a.yahoo-icon:hover {
   display: block;
   height: 0;
   font-size: 0;
-  content: " ";
+  content: ' ';
   clear: both;
 }
 
@@ -4740,7 +4740,7 @@ a.yahoo-icon:hover {
 .portfolio-item-overlay-actions .portfolio-item-link {
   display: inline-block;
   padding: 10px;
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: 'Raleway', Arial, sans-serif;
   font-size: 20px;
   font-weight: 400;
   text-decoration: none;
@@ -4809,7 +4809,7 @@ a.yahoo-icon:hover {
   display: block;
   padding: 10px 20px;
   border: 1px solid transparent;
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: 'Raleway', Arial, sans-serif;
   font-size: 12px;
   font-weight: 400;
   letter-spacing: 3px;
@@ -4845,7 +4845,7 @@ a.yahoo-icon:hover {
   display: block;
   height: 0;
   font-size: 0;
-  content: " ";
+  content: ' ';
   clear: both;
 }
 
@@ -4859,7 +4859,7 @@ a.yahoo-icon:hover {
   border: 1px solid #e6e6e6;
   padding: 3px 13px;
   margin-right: 5px;
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: 'Raleway', Arial, sans-serif;
   font-weight: 400;
   text-decoration: none;
   -webkit-transition: all 0.3s;
@@ -4900,7 +4900,7 @@ a.yahoo-icon:hover {
 .portfolio-pagination .prev:before,
 .portfolio-pagination .next:before {
   position: relative;
-  font-family: "FontAwesome";
+  font-family: 'FontAwesome';
   font-size: 14px;
   text-align: center;
 }
@@ -4919,7 +4919,7 @@ a.yahoo-icon:hover {
 
 .portfolio-pagination .prev:before {
   left: 0;
-  content: "\f060";
+  content: '\f060';
 }
 
 .portfolio-pagination .next {
@@ -4928,7 +4928,7 @@ a.yahoo-icon:hover {
 
 .portfolio-pagination .next:before {
   right: 0;
-  content: "\f061";
+  content: '\f061';
 }
 
 /* ==========================================================================
@@ -4980,7 +4980,7 @@ a.yahoo-icon:hover {
   display: block;
   height: 0;
   font-size: 0;
-  content: " ";
+  content: ' ';
   clear: both;
 }
 
@@ -5045,7 +5045,7 @@ a.yahoo-icon:hover {
   display: block;
   height: 0;
   font-size: 0;
-  content: " ";
+  content: ' ';
   clear: both;
 }
 
@@ -5375,7 +5375,7 @@ ul.products li.product .btn {
   margin: 20px 0;
 }
 
-.product .summary .quantity input[type="number"] {
+.product .summary .quantity input[type='number'] {
   display: inline-block;
   padding: 6px 10px;
   margin-right: 40px;
@@ -5388,7 +5388,7 @@ ul.products li.product .btn {
 .product .summary select {
   width: 100%;
   margin: 20px 0;
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: 'Raleway', Arial, sans-serif;
   font-size: 12px;
   letter-spacing: 2px;
 }
@@ -5405,7 +5405,7 @@ ul.products:after {
   display: block;
   height: 0;
   font-size: 0;
-  content: " ";
+  content: ' ';
   clear: both;
 }
 
@@ -5652,7 +5652,7 @@ img.aligncenter {
   margin-bottom: 20px;
 }
 
-.wp-caption img[class*="wp-image-"] {
+.wp-caption img[class*='wp-image-'] {
   margin: 0;
 }
 
@@ -5822,7 +5822,7 @@ a.post-thumbnail {
   visibility: hidden;
   display: block;
   font-size: 0;
-  content: " ";
+  content: ' ';
   clear: both;
   height: 0;
 }
@@ -5849,8 +5849,8 @@ a.post-thumbnail {
 .post-summary .more-link:after {
   position: relative;
   padding-left: 5px;
-  content: "\f105\f105";
-  font-family: "FontAwesome";
+  content: '\f105\f105';
+  font-family: 'FontAwesome';
   font-weight: 300;
 }
 
@@ -5870,7 +5870,7 @@ a.post-thumbnail {
   display: block;
   height: 0;
   font-size: 0;
-  content: " ";
+  content: ' ';
   clear: both;
 }
 
@@ -5897,7 +5897,7 @@ a.post-thumbnail {
 .post-format,
 .full-size-link {
   margin-right: 10px;
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: 'Raleway', Arial, sans-serif;
   font-weight: 500;
   letter-spacing: 3px;
 }
@@ -5974,7 +5974,7 @@ a.post-thumbnail {
   margin-bottom: 40px;
   background-color: #f4f4f4;
   color: #000;
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: 'Raleway', Arial, sans-serif;
   font-size: 18px;
   line-height: 27px;
   letter-spacing: 1px;
@@ -6000,7 +6000,7 @@ a.post-thumbnail {
   padding: 60px;
   border: 1px solid #000;
   color: #000;
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: 'Raleway', Arial, sans-serif;
   font-size: 18px;
   line-height: 27px;
   letter-spacing: 1px;
@@ -6010,9 +6010,9 @@ a.post-thumbnail {
 .format-quote .post-content blockquote:before {
   display: inline-block;
   margin-bottom: 40px;
-  font-family: "FontAwesome";
+  font-family: 'FontAwesome';
   color: #848484;
-  content: "\f10d";
+  content: '\f10d';
 }
 
 .format-quote .post-content blockquote h5 {
@@ -6022,7 +6022,7 @@ a.post-thumbnail {
 
 .format-quote .post-content blockquote h5:before,
 .format-quote .post-content blockquote h5:after {
-  content: "-";
+  content: '-';
 }
 
 .format-gallery {
@@ -6034,7 +6034,7 @@ a.post-thumbnail {
   margin-bottom: 40px;
   background-color: #f4f4f4;
   color: #000;
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: 'Raleway', Arial, sans-serif;
   font-size: 22px;
   line-height: 32px;
   letter-spacing: 1px;
@@ -6052,15 +6052,15 @@ a.post-thumbnail {
 .format-link .post-content:before {
   display: inline-block;
   margin-bottom: 20px;
-  font-family: "FontAwesome";
+  font-family: 'FontAwesome';
   font-size: 22px;
   color: #848484;
-  content: "\f0c1";
+  content: '\f0c1';
 }
 
 .format-link .post-content a {
   color: #000;
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: 'Raleway', Arial, sans-serif;
   font-size: 22px;
   line-height: 32px;
   letter-spacing: 1px;
@@ -6101,7 +6101,7 @@ a.post-thumbnail {
   display: block;
   height: 0;
   font-size: 0;
-  content: " ";
+  content: ' ';
   clear: both;
 }
 
@@ -6114,7 +6114,7 @@ a.post-thumbnail {
   border: 1px solid #e6e6e6;
   padding: 3px 13px;
   margin-right: 5px;
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: 'Raleway', Arial, sans-serif;
   font-weight: 400;
   text-decoration: none;
   -webkit-transition: all 0.3s;
@@ -6155,7 +6155,7 @@ a.post-thumbnail {
 .pagination .prev:before,
 .pagination .next:before {
   position: relative;
-  font-family: "FontAwesome";
+  font-family: 'FontAwesome';
   font-size: 14px;
   text-align: center;
 }
@@ -6174,7 +6174,7 @@ a.post-thumbnail {
 
 .pagination .prev:before {
   left: 0;
-  content: "\f060";
+  content: '\f060';
 }
 
 .pagination .next {
@@ -6183,7 +6183,7 @@ a.post-thumbnail {
 
 .pagination .next:before {
   right: 0;
-  content: "\f061";
+  content: '\f061';
 }
 
 /* ==========================================================================
@@ -6259,7 +6259,7 @@ a.post-thumbnail {
 }
 
 .comment-author a {
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: 'Raleway', Arial, sans-serif;
   font-weight: 400;
   letter-spacing: 3px;
 }
@@ -6277,7 +6277,7 @@ a.post-thumbnail {
 
 .comment-meta {
   margin-bottom: 20px;
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: 'Raleway', Arial, sans-serif;
   font-weight: 400;
   letter-spacing: 3px;
 }
@@ -6375,21 +6375,21 @@ a.post-thumbnail {
 .comment-navigation .nav-previous:not(:empty) + .nav-next:not(:empty):before {
   margin: 0 10px;
   font-weight: 400;
-  content: "\2215";
+  content: '\2215';
 }
 
 .comment-navigation .nav-previous a:before {
   position: relative;
   margin-right: 3px;
-  font-family: "FontAwesome";
-  content: "\f104";
+  font-family: 'FontAwesome';
+  content: '\f104';
 }
 
 .comment-navigation .nav-next a:after {
   position: relative;
   margin-left: 3px;
-  font-family: "FontAwesome";
-  content: "\f105";
+  font-family: 'FontAwesome';
+  content: '\f105';
 }
 
 .comment-navigation {
@@ -6414,9 +6414,9 @@ a.post-thumbnail {
 .comment-form label {
 }
 
-.comment-form input[type="text"],
-.comment-form input[type="email"],
-.comment-form input[type="url"],
+.comment-form input[type='text'],
+.comment-form input[type='email'],
+.comment-form input[type='url'],
 .comment-form textarea {
   width: 100%;
   margin-bottom: 30px;
@@ -6580,7 +6580,7 @@ a.post-thumbnail {
 }
 
 .widget_recent_entries ul {
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: 'Raleway', Arial, sans-serif;
   font-size: 12px;
   letter-spacing: 1.5px;
   list-style: none;
@@ -6641,7 +6641,7 @@ a.post-thumbnail {
 
 .widget_pages a {
   color: #848484;
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: 'Raleway', Arial, sans-serif;
   font-size: 12px;
   font-weight: 400;
   letter-spacing: 3px;
@@ -6669,7 +6669,7 @@ a.post-thumbnail {
 
 .widget_archive a {
   color: #848484;
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: 'Raleway', Arial, sans-serif;
   font-size: 12px;
   font-weight: 400;
   letter-spacing: 3px;
@@ -6701,7 +6701,7 @@ a.post-thumbnail {
 
 .widget_categories a {
   color: #848484;
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: 'Raleway', Arial, sans-serif;
   font-size: 12px;
   font-weight: 400;
   letter-spacing: 3px;
@@ -6754,7 +6754,7 @@ a.post-thumbnail {
 
 .widget_meta a {
   color: #848484;
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: 'Raleway', Arial, sans-serif;
   font-size: 12px;
   font-weight: 400;
   letter-spacing: 3px;
@@ -6791,7 +6791,7 @@ a.post-thumbnail {
   border: 1px solid #e6e6e6;
   margin: 0 12px 12px 0;
   color: #848484;
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: 'Raleway', Arial, sans-serif;
   font-size: 10px;
   line-height: 18px;
   font-weight: 400;
@@ -6882,7 +6882,7 @@ a.post-thumbnail {
 
 .widget_nav_menu a {
   color: #848484;
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: 'Raleway', Arial, sans-serif;
   font-size: 12px;
   font-weight: 400;
   letter-spacing: 3px;
@@ -7020,7 +7020,7 @@ a.post-thumbnail {
   position: relative;
 }
 
-#newsletter-subscribe-form input[type="text"] {
+#newsletter-subscribe-form input[type='text'] {
   width: 100%;
   height: 36px;
   padding: 5px 15px;
@@ -7028,7 +7028,7 @@ a.post-thumbnail {
   line-height: 20px;
 }
 
-#newsletter-subscribe-form input[type="submit"] {
+#newsletter-subscribe-form input[type='submit'] {
   position: absolute;
   top: 0;
   right: 0;
@@ -7037,7 +7037,7 @@ a.post-thumbnail {
   border-color: #e6e6e6;
   margin: 0;
   background-color: transparent;
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: 'Raleway', Arial, sans-serif;
   font-size: 10px;
   letter-spacing: 3px;
 
@@ -7045,7 +7045,7 @@ a.post-thumbnail {
   transition: background-color 0.3s;
 }
 
-#newsletter-subscribe-form input[type="submit"]:hover {
+#newsletter-subscribe-form input[type='submit']:hover {
   background-color: #e6e6e6;
 }
 
@@ -7054,18 +7054,18 @@ a.post-thumbnail {
   margin: 0 auto;
 }
 
-#under-construction #newsletter-subscribe-form input[type="text"] {
+#under-construction #newsletter-subscribe-form input[type='text'] {
   border-radius: 3px;
   border-color: #fff;
   background-color: transparent;
 }
 
-#under-construction #newsletter-subscribe-form input[type="submit"] {
+#under-construction #newsletter-subscribe-form input[type='submit'] {
   right: 0;
   color: #fff;
 }
 
-#under-construction #newsletter-subscribe-form input[type="submit"]:hover {
+#under-construction #newsletter-subscribe-form input[type='submit']:hover {
   color: #000;
 }
 
@@ -7104,7 +7104,7 @@ a.post-thumbnail {
 
 .ewf_widget_latest_posts ul li a,
 .ewf_widget_latest_posts ul li .post-date {
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: 'Raleway', Arial, sans-serif;
   font-size: 12px;
   line-height: 22px;
   font-weight: 400;
@@ -7126,7 +7126,7 @@ a.post-thumbnail {
   display: block;
   height: 0;
   font-size: 0;
-  content: " ";
+  content: ' ';
   clear: both;
 }
 
@@ -7158,7 +7158,7 @@ a.post-thumbnail {
 
 .ewf_widget_navigation a {
   color: #848484;
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: 'Raleway', Arial, sans-serif;
   font-size: 12px;
   font-weight: 400;
   letter-spacing: 3px;
@@ -7202,7 +7202,7 @@ a.post-thumbnail {
   display: block;
   height: 0;
   font-size: 0;
-  content: " ";
+  content: ' ';
   clear: both;
 }
 
@@ -7261,5 +7261,5 @@ a.post-thumbnail {
 }
 
 .story-text {
-  font-family: "DMSans", sans-serif;
+  font-family: 'DMSans', sans-serif;
 }
