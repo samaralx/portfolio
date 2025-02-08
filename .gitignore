@@ -54,4 +54,6 @@ $RECYCLE.BIN/
 *.bak
 htaccess
 .parcel-cache/
+.parcel-cache
+node_modules/
 node_modules
