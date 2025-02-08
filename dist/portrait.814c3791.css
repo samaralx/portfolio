@@ -1,0 +1,24 @@
+@font-face {
+  font-family: Noto Sans JP;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("noto-sans-jp-regular.26947ae4.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("Poppins-SemiBold.bdc7ebfa.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: DMSans;
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("DMSans_24pt-Light.8407d3de.ttf") format("truetype");
+}
+/*# sourceMappingURL=portrait.814c3791.css.map */

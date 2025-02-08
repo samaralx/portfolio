@@ -1,0 +1,14 @@
+{
+  "extends": "@parcel/config-default",
+  "transformers": {
+    "manifest.json": ["@parcel/transformer-webextension"],
+    "raw:*": ["@parcel/transformer-raw"]
+  },
+  "optimizers": {
+    "raw:*": []
+  },
+  "packagers": {
+    "manifest.json": "@parcel/packager-raw-url",
+    "raw:*": "@parcel/packager-raw"
+  }
+}
