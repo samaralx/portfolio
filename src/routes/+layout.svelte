@@ -1,8 +1,8 @@
 <script>
   import { page } from '$app/state';
   import { slide } from 'svelte/transition';
+  import { Hamburger } from 'svelte-hamburgers';
 
-  import HamburgerMenuIcon from '$lib/assets/HamburgerMenuIcon.svelte';
   import Logo from '$lib/assets/Logo.svelte';
   import CloseIcon from '$lib/assets/CloseIcon.svelte';
 
@@ -40,17 +40,16 @@
     </ul>
 
     <!-- Hamburger icon (mobile only) -->
-    <button
-      onclick={toggleMenu}
-      class="mobile-menu-trigger"
-      aria-label="Toggle navigation"
-    >
-      {#if isMenuOpen}
-        <CloseIcon />
-      {:else}
-        <HamburgerMenuIcon fillColor={isHomePage ? '#FFF' : '#000'} />
-      {/if}
-    </button>
+    <div class="mobile-menu-trigger">
+      <Hamburger
+        bind:isMenuOpen
+        type="slider"
+        title="Toggle navigation"
+        ariaControls="nav"
+        onclick={toggleMenu}
+        --color={isHomePage && !isMenuOpen ? '#FFF' : '#000'}
+      />
+    </div>
   </nav>
 </header>
 

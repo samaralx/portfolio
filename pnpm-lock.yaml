@@ -14,6 +14,15 @@ importers:
       embla-carousel-svelte:
         specifier: ^8.5.2
         version: 8.5.2(svelte@5.19.9)
+      flipping:
+        specifier: ^1.1.0
+        version: 1.1.0
+      photoswipe:
+        specifier: ^5.4.4
+        version: 5.4.4
+      svelte-hamburgers:
+        specifier: ^5.0.0
+        version: 5.0.0(svelte@5.19.9)
     devDependencies:
       '@sveltejs/adapter-auto':
         specifier: ^4.0.0
@@ -569,6 +578,9 @@ packages:
   estree-walker@2.0.2:
     resolution: {integrity: sha512-Rfkk/Mp/DL7JVje3u18FxFujQlTNR2q6QfMSMB7AvCBx91NGj/ba3kCfza0f6dVDbw7YlRf/nDrn7pQrCCyQ/w==}
 
+  flipping@1.1.0:
+    resolution: {integrity: sha512-aG+TldohfRa6t5fwD2SHvtV193lDrEbHIFOzfYogzJzjxLaFpoek39S7rsIAmE3KKVM84I24J2Z50PsPqTrldA==}
+
   fsevents@2.3.3:
     resolution: {integrity: sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==}
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
@@ -681,6 +693,10 @@ packages:
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
+  photoswipe@5.4.4:
+    resolution: {integrity: sha512-WNFHoKrkZNnvFFhbHL93WDkW3ifwVOXSW3w1UuZZelSmgXpIGiZSNlZJq37rR8YejqME2rHs9EhH9ZvlvFH2NA==}
+    engines: {node: '>= 0.12.0'}
+
   picocolors@1.1.1:
     resolution: {integrity: sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==}
 
@@ -691,6 +707,9 @@ packages:
   postcss@8.5.1:
     resolution: {integrity: sha512-6oz2beyjc5VMn/KV1pPw8fliQkhBXrVn1Z3TVyqZxU8kZpzEKhBdmCFqI6ZbmGtamQvQGuU1sgPTk8ZrXDD7jQ==}
     engines: {node: ^10 || ^12 || >=14}
+
+  rematrix@0.1.3:
+    resolution: {integrity: sha512-Wpk2WXYrN7brfFHDVljhsWBkMg0RCkS8ZlymUuUrlmLtfm72zLF50VWpRdAjjNHagupqXVeWiS1UOyjoZlDZyA==}
 
   rollup@4.34.6:
     resolution: {integrity: sha512-wc2cBWqJgkU3Iz5oztRkQbfVkbxoz5EhnCGOrnJvnLnQ7O0WhQUYyv18qQI79O8L7DdHrrlJNeCHd4VGpnaXKQ==}
@@ -723,6 +742,11 @@ packages:
   source-map-js@1.2.1:
     resolution: {integrity: sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==}
     engines: {node: '>=0.10.0'}
+
+  svelte-hamburgers@5.0.0:
+    resolution: {integrity: sha512-MMb47VCozKDgn/jtmeqw+CbI3cZmkDXd/FG3VCkReMdw2YCSOaWYLsqsXiWTWoQE/oSmw1vH/Tm5mChqlsldHQ==}
+    peerDependencies:
+      svelte: ^5.0.0
 
   svelte-parse-markup@0.1.5:
     resolution: {integrity: sha512-T6mqZrySltPCDwfKXWQ6zehipVLk4GWfH1zCMGgRtLlOIFPuw58ZxVYxVvotMJgJaurKi1i14viB2GIRKXeJTQ==}
@@ -1200,6 +1224,10 @@ snapshots:
 
   estree-walker@2.0.2: {}
 
+  flipping@1.1.0:
+    dependencies:
+      rematrix: 0.1.3
+
   fsevents@2.3.3:
     optional: true
 
@@ -1278,6 +1306,8 @@ snapshots:
 
   nanoid@3.3.8: {}
 
+  photoswipe@5.4.4: {}
+
   picocolors@1.1.1: {}
 
   picomatch@4.0.2: {}
@@ -1287,6 +1317,8 @@ snapshots:
       nanoid: 3.3.8
       picocolors: 1.1.1
       source-map-js: 1.2.1
+
+  rematrix@0.1.3: {}
 
   rollup@4.34.6:
     dependencies:
@@ -1358,6 +1390,10 @@ snapshots:
       totalist: 3.0.1
 
   source-map-js@1.2.1: {}
+
+  svelte-hamburgers@5.0.0(svelte@5.19.9):
+    dependencies:
+      svelte: 5.19.9
 
   svelte-parse-markup@0.1.5(svelte@5.19.9):
     dependencies:

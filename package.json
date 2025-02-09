@@ -25,6 +25,9 @@
   },
   "dependencies": {
     "embla-carousel-autoplay": "^8.5.2",
-    "embla-carousel-svelte": "^8.5.2"
+    "embla-carousel-svelte": "^8.5.2",
+    "flipping": "^1.1.0",
+    "photoswipe": "^5.4.4",
+    "svelte-hamburgers": "^5.0.0"
   }
 }
