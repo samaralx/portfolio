@@ -19,7 +19,7 @@
     align-items: center;
     gap: 0.5rem;
     width: fit-content;
-    margin: 3rem auto 0;
+    margin: 3rem auto;
     border-bottom: 1px solid var(--accent-color);
   }
 
