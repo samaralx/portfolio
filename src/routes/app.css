@@ -1,6 +1,10 @@
 @import './reset.css';
 @import './fonts.css';
 
+:root {
+  --accent-color: #ffaa00;
+}
+
 body {
   font-family: 'Noto Sans JP', sans-serif;
 }

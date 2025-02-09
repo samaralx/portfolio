@@ -144,7 +144,7 @@
 
   .desktop-menu a:hover,
   .mobile-menu a:hover {
-    color: #ffaa00;
+    color: var(--accent-color);
   }
 
   .mobile-menu-trigger {
