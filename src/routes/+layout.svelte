@@ -96,6 +96,7 @@
 <style>
   header {
     position: sticky;
+    top: 0;
     width: 100%;
     height: 80px;
     background: #fff;
