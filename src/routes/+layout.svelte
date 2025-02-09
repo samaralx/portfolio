@@ -194,6 +194,7 @@
     justify-content: space-around;
     align-items: center;
     margin: 0 auto;
+    font-size: 0.875rem;
   }
 
   @media (max-width: 40rem) {
