@@ -17,7 +17,8 @@
     isMenuOpen = !isMenuOpen;
   };
 
-  const closeMenu = () => {
+  const closeMenu = (e) => {
+    e.stopPropagation();
     isMenuOpen = false;
   };
 </script>
