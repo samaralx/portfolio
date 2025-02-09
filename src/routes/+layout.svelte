@@ -103,7 +103,7 @@
     margin: 0 auto;
   }
 
-  @media (max-width: 40rem) {
+  @media (max-width: 640px) {
     header {
       padding: 0 1.5rem;
     }
@@ -152,7 +152,7 @@
     height: 48px;
   }
 
-  @media (max-width: 40rem) {
+  @media (max-width: 640px) {
     .desktop-menu {
       display: none;
     }
@@ -182,9 +182,14 @@
     font-size: 2rem;
   }
 
+  main {
+    padding: 0 1.5rem;
+  }
+
   footer {
     width: 100%;
-    padding: 0 0 1.5rem;
+    margin-top: 80px;
+    padding: 0 0 56px;
   }
 
   footer div {
@@ -196,7 +201,7 @@
     font-size: 0.875rem;
   }
 
-  @media (max-width: 40rem) {
+  @media (max-width: 640px) {
     footer {
       padding: 0 2rem 1.5rem;
     }
@@ -218,6 +223,7 @@
 
   .homepage-footer {
     position: fixed;
+    margin-top: 0;
     bottom: 0;
     color: #fff;
   }
