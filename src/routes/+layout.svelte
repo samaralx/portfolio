@@ -10,7 +10,7 @@
 
   let { children } = $props();
 
-  const isHomePage = page.url.pathname === '/';
+  let isHomePage = $derived(page.url.pathname === '/');
 
   let isMenuOpen = $state(false);
   const toggleMenu = () => {
