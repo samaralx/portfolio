@@ -24,6 +24,12 @@
     margin: 3rem auto;
   }
 
+  @media (max-width: 640px) {
+    div {
+      margin-bottom: 2rem;
+    }
+  }
+
   span {
     font-size: 0.875;
     line-height: 0.875;
