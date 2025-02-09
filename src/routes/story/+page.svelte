@@ -3,7 +3,7 @@
 
   const storyInfos = [
     {
-      id: '01',
+      id: 'one',
       thumbnailUrl: '/images/bk-01_1000px.webp',
       title: 'Thanks for the fish',
       description: 'Iceland',
