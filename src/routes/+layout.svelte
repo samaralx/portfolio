@@ -1,6 +1,6 @@
 <script>
   import { page } from '$app/state';
-  import { slide } from 'svelte/transition';
+  import { fly } from 'svelte/transition';
   import { Hamburger } from 'svelte-hamburgers';
 
   import Logo from '$lib/assets/Logo.svelte';
@@ -56,7 +56,10 @@
 
 <!-- Fullscreen overlay for mobile menu -->
 {#if isMenuOpen}
-  <div class="mobile-menu-container" transition:slide={{ duration: 300 }}>
+  <div
+    class="mobile-menu-container"
+    transition:fly={{ y: '-100%', duration: 500 }}
+  >
     <ul class="mobile-menu">
       <li>
         <a href="/story" onclick={closeMenu}>Story</a>
