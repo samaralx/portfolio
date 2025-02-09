@@ -23,77 +23,85 @@
   };
 </script>
 
-<header class={isHomePage ? 'homepage-header' : ''}>
-  <nav>
-    <!-- Left section: Logo -->
-    <a href="/" class="logo-container" onclick={closeMenu}>
-      <Logo
-        fillColor={isHomePage && !isMenuOpen ? '#FFF' : '#000'}
-        class="w-4 h-4"
-      />
-    </a>
+<div class="root">
+  <header class={isHomePage ? 'homepage-header' : ''}>
+    <nav>
+      <!-- Left section: Logo -->
+      <a href="/" class="logo-container" onclick={closeMenu}>
+        <Logo
+          fillColor={isHomePage && !isMenuOpen ? '#FFF' : '#000'}
+          class="w-4 h-4"
+        />
+      </a>
 
-    <!-- Right section: Desktop menu -->
-    <ul class={`desktop-menu ${isHomePage ? 'text-white' : ''}`}>
-      <li><a href="/story">Story</a></li>
-      <li><a href="/portrait">Portrait</a></li>
-      <li><a href="/about">About</a></li>
-    </ul>
+      <!-- Right section: Desktop menu -->
+      <ul class={`desktop-menu ${isHomePage ? 'text-white' : ''}`}>
+        <li><a href="/story">Story</a></li>
+        <li><a href="/portrait">Portrait</a></li>
+        <li><a href="/about">About</a></li>
+      </ul>
 
-    <!-- Hamburger icon (mobile only) -->
-    <div class="mobile-menu-trigger">
-      <Hamburger
-        bind:isMenuOpen
-        type="slider"
-        title="Toggle navigation"
-        ariaControls="nav"
-        onclick={toggleMenu}
-        --color={isHomePage && !isMenuOpen ? '#FFF' : '#000'}
-      />
+      <!-- Hamburger icon (mobile only) -->
+      <div class="mobile-menu-trigger">
+        <Hamburger
+          bind:isMenuOpen
+          type="slider"
+          title="Toggle navigation"
+          ariaControls="nav"
+          onclick={toggleMenu}
+          --color={isHomePage && !isMenuOpen ? '#FFF' : '#000'}
+        />
+      </div>
+    </nav>
+  </header>
+
+  <!-- Fullscreen overlay for mobile menu -->
+  {#if isMenuOpen}
+    <div
+      class="mobile-menu-container"
+      transition:fly={{ y: '-100%', duration: 500 }}
+    >
+      <ul class="mobile-menu">
+        <li>
+          <a href="/story" onclick={closeMenu}>Story</a>
+        </li>
+
+        <li>
+          <a href="/portrait" onclick={closeMenu}>Portrait</a>
+        </li>
+
+        <li>
+          <a href="/about" onclick={closeMenu}>About</a>
+        </li>
+      </ul>
     </div>
-  </nav>
-</header>
+  {/if}
 
-<!-- Fullscreen overlay for mobile menu -->
-{#if isMenuOpen}
-  <div
-    class="mobile-menu-container"
-    transition:fly={{ y: '-100%', duration: 500 }}
-  >
-    <ul class="mobile-menu">
-      <li>
-        <a href="/story" onclick={closeMenu}>Story</a>
-      </li>
+  <main>
+    {@render children()}
+  </main>
 
-      <li>
-        <a href="/portrait" onclick={closeMenu}>Portrait</a>
-      </li>
+  <footer class={isHomePage ? 'homepage-footer' : ''}>
+    <div>
+      <!-- Left Link -->
+      <a href="/impressum"> Impressum </a>
 
-      <li>
-        <a href="/about" onclick={closeMenu}>About</a>
-      </li>
-    </ul>
-  </div>
-{/if}
+      <!-- Center Text -->
+      <span> © samaralx 2025 </span>
 
-<main>
-  {@render children()}
-</main>
-
-<footer class={isHomePage ? 'homepage-footer' : ''}>
-  <div>
-    <!-- Left Link -->
-    <a href="/impressum"> Impressum </a>
-
-    <!-- Center Text -->
-    <span> © samaralx 2025 </span>
-
-    <!-- Right Link -->
-    <a href="/datenschutz"> Datenschutzerklärung </a>
-  </div>
-</footer>
+      <!-- Right Link -->
+      <a href="/datenschutz"> Datenschutzerklärung </a>
+    </div>
+  </footer>
+</div>
 
 <style>
+  .root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
   header {
     position: sticky;
     top: 0;
@@ -188,6 +196,7 @@
   }
 
   main {
+    flex-grow: 1;
     padding: 0 1.5rem;
   }
 
