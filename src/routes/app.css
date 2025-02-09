@@ -3,6 +3,7 @@
 
 :root {
   --accent-color: #ffaa00;
+  --main-padding-left-right: 1.5rem;
 }
 
 body {

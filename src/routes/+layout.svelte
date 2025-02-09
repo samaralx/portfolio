@@ -197,7 +197,7 @@
 
   main {
     flex-grow: 1;
-    padding: 0 1.5rem;
+    padding: 0 var(--main-padding-left-right);
   }
 
   footer {
