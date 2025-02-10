@@ -2,6 +2,7 @@
   import { fade, fly } from 'svelte/transition';
 
   import PageTitle from '$lib/components/PageTitle.svelte';
+  import InstagramIcon from '$lib/assets/InstagramIcon.svelte';
 
   let isImageOverlayShown = $state(false);
 
@@ -20,8 +21,8 @@
 <div class="container">
   <div
     class="profile-image-container"
-    onmouseenter={showImageOverlay}
-    onmouseleave={hideImageOverlay}
+    onpointerenter={showImageOverlay}
+    onpointerleave={hideImageOverlay}
   >
     <img src="/images/XinSH.webp" alt="Xin Liu" />
 
@@ -70,7 +71,7 @@
 </div>
 
 <a href="https://www.instagram.com/samara_lx/" target="blank" class="qrcode">
-  <img src="/images/ins.jpg" alt=" QR code for Liu Xin's Instagram profile" />
+  <InstagramIcon />
 </a>
 
 <style>
@@ -127,21 +128,8 @@
   }
 
   .qrcode {
-    width: 12%;
+    width: 2rem;
     display: block;
     margin: 80px auto 0;
-  }
-
-  @media (max-width: 768px) {
-    .qrcode {
-      width: 24%;
-      margin-top: 48px;
-    }
-  }
-
-  @media (max-width: 640px) {
-    .qrcode {
-      width: 60%;
-    }
   }
 </style>
