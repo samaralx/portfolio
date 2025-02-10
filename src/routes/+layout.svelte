@@ -193,8 +193,11 @@
   .mobile-menu {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 2rem;
     font-size: 2rem;
+    padding: 0;
   }
 
   main {
