@@ -1,39 +1,13 @@
 <script>
-  import { fade, fly } from 'svelte/transition';
-
   import PageTitle from '$lib/components/PageTitle.svelte';
   import InstagramIcon from '$lib/assets/InstagramIcon.svelte';
-
-  let isImageOverlayShown = $state(false);
-
-  const showImageOverlay = () => {
-    isImageOverlayShown = true;
-  };
-
-  const hideImageOverlay = () => {
-    isImageOverlayShown = false;
-  };
 </script>
 
 <PageTitle title="About" />
 
-<!-- svelte-ignore a11y_no_static_element_interactions -->
 <div class="container">
-  <div
-    class="profile-image-container"
-    onpointerenter={showImageOverlay}
-    onpointerleave={hideImageOverlay}
-  >
+  <div class="profile-image-container">
     <img src="/images/XinSH.webp" alt="Xin Liu" />
-
-    {#if isImageOverlayShown}
-      <div class="overlay" transition:fade={{ duration: 300 }}></div>
-
-      <div class="name" transition:fly={{ y: '100%' }}>
-        <h4>samaralx</h4>
-        <span>Xin Liu</span>
-      </div>
-    {/if}
   </div>
 
   <div class="description">
@@ -99,26 +73,6 @@
 
   .profile-image-container {
     position: relative;
-  }
-
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.81);
-  }
-
-  .name {
-    position: absolute;
-    left: 0;
-    bottom: 2rem;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
 
   .description {
