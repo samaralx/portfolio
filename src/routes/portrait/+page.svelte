@@ -11,7 +11,7 @@
     CATEGORY_B_AND_W,
     CATEGORY_COLOR,
     imgInfos,
-  } from './imageInfo';
+  } from './imgInfos';
 
   import 'photoswipe/style.css';
 
