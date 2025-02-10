@@ -86,19 +86,19 @@
 
 <style>
   p {
-    width: 75%;
+    width: var(--main-content-width);
     margin: 0 auto;
   }
 
   @media (max-width: 768px) {
     p {
-      width: 85%;
+      width: var(--main-content-width-tablet);
     }
   }
 
   @media (max-width: 640px) {
     p {
-      width: 100%;
+      width: var(--main-content-width-mobile);
     }
   }
 

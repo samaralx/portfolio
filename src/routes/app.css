@@ -4,6 +4,9 @@
 :root {
   --accent-color: #ffaa00;
   --main-padding-left-right: 1.5rem;
+  --main-content-width: 75%;
+  --main-content-width-tablet: 85%;
+  --main-content-width-mobile: 100%;
 }
 
 body {
