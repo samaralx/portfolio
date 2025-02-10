@@ -43,7 +43,7 @@
         target="_blank"
         rel="noreferrer"
       >
-        <img src={imgInfo.thumbnailUrl} alt="" />
+        <img src={imgInfo.thumbnailUrl} alt="" loading="lazy" />
       </a>
     {/each}
   </div>
