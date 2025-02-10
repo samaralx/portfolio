@@ -1,18 +1,18 @@
 <script>
-  import PageTitle from "$lib/components/PageTitle.svelte";
+  import PageTitle from '$lib/components/PageTitle.svelte';
 
   const storyInfos = [
     {
-      id: "one",
-      thumbnailUrl: "/images/bk-01_1000px.webp",
-      title: "Thanks for the fish",
-      description: "Iceland",
+      id: 'one',
+      thumbnailUrl: '/images/bk-01_1000px.webp',
+      title: 'Thanks for the fish',
+      description: 'Iceland',
     },
     {
-      id: "two",
-      thumbnailUrl: "/images/bj-01_1000px.jpg.webp",
-      title: "Thanks for the ink dragon",
-      description: "Beijing",
+      id: 'two',
+      thumbnailUrl: '/images/bj-01_1000px.jpg.webp',
+      title: 'Thanks for the ink dragon',
+      description: 'Beijing',
     },
   ];
 </script>
@@ -23,7 +23,9 @@
   {#each storyInfos as story}
     <a href={`/story/${story.id}`}>
       <div class="image-container">
-        <img src={story.thumbnailUrl} alt="" />
+        <div>
+          <img src={story.thumbnailUrl} alt="" />
+        </div>
       </div>
 
       <div class="story-info">
@@ -61,8 +63,16 @@
   }
 
   .image-container {
-    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100%;
+    padding: 3rem;
+    background: #fbfbfb;
+  }
+
+  .image-container div {
+    overflow: hidden;
   }
 
   a:hover img {
