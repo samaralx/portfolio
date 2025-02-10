@@ -50,6 +50,7 @@
           ariaControls="nav"
           onclick={toggleMenu}
           --color={isHomePage && !isMenuOpen ? '#FFF' : '#000'}
+          --padding="0px"
         />
       </div>
     </nav>
@@ -161,8 +162,9 @@
 
   .mobile-menu-trigger {
     display: none;
-    width: 48px;
-    height: 48px;
+    width: 40px;
+    height: 40px;
+    padding: 0.375rem 0 0.375rem 0.375rem;
   }
 
   @media (max-width: 640px) {
