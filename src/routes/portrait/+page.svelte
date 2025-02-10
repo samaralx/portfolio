@@ -122,6 +122,7 @@
 
   a {
     overflow: hidden;
+    height: fit-content;
   }
 
   a:hover img {
