@@ -162,9 +162,8 @@
 
   .mobile-menu-trigger {
     display: none;
-    width: 40px;
-    height: 40px;
-    padding: 0.375rem 0 0.375rem 0.375rem;
+    width: 32px;
+    height: 32px;
   }
 
   @media (max-width: 640px) {
