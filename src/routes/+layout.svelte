@@ -23,6 +23,10 @@
   };
 </script>
 
+<svelte:head>
+  <title>samaralx</title>
+</svelte:head>
+
 <div class="root">
   <header class={isHomePage ? 'homepage-header' : ''}>
     <nav>
