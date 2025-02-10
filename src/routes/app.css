@@ -44,6 +44,7 @@ button {
 a,
 button {
   -webkit-tap-highlight-color: transparent;
+  color: #000;
 }
 
 picture,
