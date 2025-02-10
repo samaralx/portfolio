@@ -25,6 +25,7 @@
 
 <svelte:head>
   <title>samaralx</title>
+  <meta name="description" content="samaralx's portfolio" />
 </svelte:head>
 
 <div class="root">
