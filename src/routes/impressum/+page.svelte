@@ -113,4 +113,8 @@
   div {
     margin-bottom: 1.5rem;
   }
+
+  a:hover {
+    text-decoration: underline;
+  }
 </style>
