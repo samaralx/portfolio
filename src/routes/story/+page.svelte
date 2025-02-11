@@ -66,12 +66,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
-    padding: 3rem;
+    aspect-ratio: 16/9;
     background: #fbfbfb;
   }
 
   .image-container div {
+    width: 80%;
     overflow: hidden;
   }
 
@@ -81,7 +81,6 @@
 
   img {
     object-fit: cover;
-    height: auto;
     transition: transform 0.5s ease-in-out;
   }
 

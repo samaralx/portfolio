@@ -78,7 +78,12 @@
       target="_blank"
       rel="noreferrer"
     >
-      <img src={imgInfo.thumbnailUrl} alt="" />
+      <img
+        src={imgInfo.thumbnailUrl}
+        alt=""
+        width={imgInfo.width}
+        height={imgInfo.height}
+      />
     </a>
   {/each}
 </div>
