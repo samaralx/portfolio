@@ -8,8 +8,10 @@
 
   import './app.css';
 
+  // biome-ignore lint/style/useConst: <explanation>
   let { children } = $props();
 
+  // biome-ignore lint/style/useConst: <explanation>
   let isHomePage = $derived(page.url.pathname === '/');
 
   let isMenuOpen = $state(false);
@@ -103,9 +105,12 @@
 
 <style>
   .root {
+    --root-max-width: 1800px;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    max-width: var(--root-max-width);
+    margin: 0 auto;
   }
 
   header {
@@ -211,7 +216,8 @@
 
   footer {
     width: 100%;
-    margin-top: 80px;
+    max-width: var(--root-max-width);
+    margin: 80px auto 0;
     padding: 0 0 56px;
   }
 
