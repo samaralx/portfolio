@@ -71,7 +71,7 @@
   }
 
   .image-container div {
-    width: 80%;
+    width: 85%;
     overflow: hidden;
   }
 
