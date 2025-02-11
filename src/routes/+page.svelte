@@ -13,8 +13,8 @@
   ];
 
   // Embla Slider configuration
-  let options = { loop: true };
-  let plugins = [Autoplay()];
+  const options = { loop: true };
+  const plugins = [Autoplay()];
 
   let emblaApi;
 
