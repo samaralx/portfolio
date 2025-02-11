@@ -1,21 +1,21 @@
 <script>
-  import { onMount } from "svelte";
-  import PhotoSwipeLightbox from "photoswipe/lightbox";
+  import { onMount } from 'svelte';
+  import PhotoSwipeLightbox from 'photoswipe/lightbox';
 
-  import PageTitle from "$lib/components/PageTitle.svelte";
-  import { imgInfos } from "./imgInfos";
+  import PageTitle from '$lib/components/PageTitle.svelte';
+  import { imgInfos } from './imgInfos';
 
-  import "photoswipe/style.css";
-  import "../storyDetailStyles.css";
+  import 'photoswipe/style.css';
+  import '../storyDetailStyles.css';
 
-  const galleryId = "story-gallery-1";
+  const galleryId = 'story-gallery-1';
 
   // initialize lightbox
   onMount(() => {
     const lightbox = new PhotoSwipeLightbox({
-      gallery: "#" + galleryId,
-      children: "a",
-      pswpModule: () => import("photoswipe"),
+      gallery: `#${galleryId}`,
+      children: 'a',
+      pswpModule: () => import('photoswipe'),
     });
     lightbox.init();
   });

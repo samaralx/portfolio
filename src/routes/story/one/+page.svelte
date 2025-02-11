@@ -13,7 +13,7 @@
   // initialize lightbox
   onMount(() => {
     const lightbox = new PhotoSwipeLightbox({
-      gallery: '#' + galleryId,
+      gallery: `#${galleryId}`,
       children: 'a',
       pswpModule: () => import('photoswipe'),
     });
