@@ -39,7 +39,7 @@
   <div class="slider">
     {#each imgUrls as imgUrl}
       <div class="slide">
-        <img src={imgUrl} alt="" loading="lazy" />
+        <img src={imgUrl} alt="" fetchpriority="high" />
       </div>
     {/each}
   </div>
