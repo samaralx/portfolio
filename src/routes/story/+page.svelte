@@ -1,18 +1,18 @@
 <script>
-  import PageTitle from '$lib/components/PageTitle.svelte';
+  import PageTitle from "$lib/components/PageTitle.svelte";
 
   const storyInfos = [
     {
-      id: 'one',
-      thumbnailUrl: '/images/bk-01_1000px.webp',
-      title: 'Thanks for the fish',
-      description: 'Iceland',
+      id: "one",
+      thumbnailUrl: "/images/bk-00_1000px.webp",
+      title: "Thanks for the fish",
+      description: "Iceland",
     },
     {
-      id: 'two',
-      thumbnailUrl: '/images/bj-01_1000px.jpg.webp',
-      title: 'Thanks for the ink dragon',
-      description: 'Beijing',
+      id: "two",
+      thumbnailUrl: "/images/bj-00_1000px.webp",
+      title: "Thanks for the ink dragon",
+      description: "Beijing",
     },
   ];
 </script>
