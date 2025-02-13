@@ -1,5 +1,4 @@
 export const imgInfos = [
-    { thumbnailUrl: '/images/bk-00_1000px.webp', largeUrl: '/images/bk-00.webp', width: 2555, height: 1278},
     { thumbnailUrl: '/images/bk-01_1000px.jpg.webp', largeUrl: '/images/bk-01.webp', width: 2000, height: 997},
     { thumbnailUrl: '/images/bk-03_1000px.jpg.webp', largeUrl: '/images/bk-03.webp', width: 2000, height: 1001},
     { thumbnailUrl: '/images/bk-04_1000px.jpg.webp', largeUrl: '/images/bk-04.webp', width: 2000, height: 1009},
