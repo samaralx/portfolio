@@ -30,6 +30,7 @@
 
       <div class="story-info">
         <span>{story.title}</span>
+        <span class="description">|</span>
         <span class="description">{story.description}</span>
       </div>
     </a>
@@ -87,10 +88,11 @@
   .story-info {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 0.5rem;
   }
 
   .description {
-    font-size: 0.875rem;
+    /* font-size: 0.875rem; */
+    color: rgb(122, 122, 124);
   }
 </style>
