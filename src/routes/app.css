@@ -1,5 +1,5 @@
-@import './reset.css';
-@import './fonts.css';
+@import "./reset.css";
+@import "./fonts.css";
 
 :root {
   --accent-color: #ffaa00;
@@ -10,7 +10,7 @@
 }
 
 body {
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 h1,
@@ -19,7 +19,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 h2 {
