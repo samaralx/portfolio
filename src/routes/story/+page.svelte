@@ -1,18 +1,18 @@
 <script>
-  import PageTitle from "$lib/components/PageTitle.svelte";
+  import PageTitle from '$lib/components/PageTitle.svelte';
 
   const storyInfos = [
     {
-      id: "one",
-      thumbnailUrl: "/images/bk-00_1000px.webp",
-      title: "Thanks for the fish",
-      description: "Iceland",
+      id: 'one',
+      thumbnailUrl: '/images/bk-00_1000px.webp',
+      title: 'Thanks for the fish',
+      description: 'Iceland',
     },
     {
-      id: "two",
-      thumbnailUrl: "/images/bj-00_1000px.webp",
-      title: "Thanks for the ink dragon",
-      description: "Beijing",
+      id: 'two',
+      thumbnailUrl: '/images/bj-00_1000px.webp',
+      title: 'Thanks for the ink dragon',
+      description: 'Beijing',
     },
   ];
 </script>
@@ -28,11 +28,7 @@
         </div>
       </div>
 
-      <div class="story-info">
-        <span>{story.title}</span>
-        <span class="description">|</span>
-        <span class="description">{story.description}</span>
-      </div>
+      <span>{story.title}, {story.description}</span>
     </a>
   {/each}
 </div>
@@ -83,16 +79,5 @@
   img {
     object-fit: cover;
     transition: transform 0.5s ease-in-out;
-  }
-
-  .story-info {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
-
-  .description {
-    /* font-size: 0.875rem; */
-    color: rgb(122, 122, 124);
   }
 </style>
