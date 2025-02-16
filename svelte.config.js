@@ -6,6 +6,7 @@ export default {
 		csp: {
 			directives: {
 				"script-src": ["self"],
+				"frame-ancestors": ["self"],
 			},
 			// must be specified with either the `report-uri` or `report-to` directives, or both
 			reportOnly: {
