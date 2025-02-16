@@ -6,7 +6,6 @@ export default {
 		csp: {
 			directives: {
 				"script-src": ["self"],
-				"frame-ancestors": ["none"],
 				"base-uri": ["self"],
 				"form-action": ["self"],
 				"default-src": ["self"],
