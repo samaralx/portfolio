@@ -23,7 +23,19 @@
     <link rel="manifest" href="%sveltekit.assets%/site.webmanifest" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="referrer" content="no-referrer, same-origin" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'" />
     <meta http-equiv="Content-Security-Policy" content="script-src 'self'" />
+    <meta http-equiv="Content-Security-Policy" content="base-uri 'none'" />
+    <meta http-equiv="Content-Security-Policy" content="form-action 'none'" />
+    <meta http-equiv="Content-Security-Policy" content="style-src 'self'" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="frame-ancestors 'self'"
+    />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="object-src 'default-src'"
+    />
     %sveltekit.head%
   </head>
   <body data-sveltekit-preload-data="hover">
